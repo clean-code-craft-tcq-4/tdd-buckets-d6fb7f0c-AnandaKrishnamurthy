@@ -281,15 +281,19 @@ namespace Consecutive_No_Range_Checker
 
         static void Main(string[] args)
         {
+            
+            
             Consecutive_Range_Check InstanceConsecutive_Range_Check = new Consecutive_Range_Check();
-            List<int> CurrentSamples_Unsorted = new List<int>();   //2,1, 2, 15, 4, 5, 6, 10, 2, 20, 21, 22, 23, 24, 25, 21,21,22,22};
-            CurrentSamples_Unsorted = InstanceConsecutive_Range_Check.Evaluate_Convert_To_Int_Input_Data();
+            List<int> CurrentSamples_Unsorted = new List<int>{2,1, 2, 15, 4, 5, 6, 10, 2, 20, 21, 22, 23, 24, 25, 21,21,22,22};
+            //CurrentSamples_Unsorted = InstanceConsecutive_Range_Check.Evaluate_Convert_To_Int_Input_Data();          
             List<int> CurrentSamples_Sorted = new List<int>();
             CurrentSamples_Unsorted.Sort();
             Dictionary<string, int[]> Dictionary_of_CurrentSamples = new Dictionary<string, int[]>();
             CurrentSamples_Sorted = InstanceConsecutive_Range_Check.Delete_NonCosecutive_Numbers(CurrentSamples_Unsorted.ToArray());
             Dictionary_of_CurrentSamples = InstanceConsecutive_Range_Check.Saparate_Cosecutive_Numbers_With_Ranges(CurrentSamples_Sorted.ToArray());
             InstanceConsecutive_Range_Check.Combine_String_Print_On_Console(Dictionary_of_CurrentSamples);
+            
+            
         }
     }
 }
