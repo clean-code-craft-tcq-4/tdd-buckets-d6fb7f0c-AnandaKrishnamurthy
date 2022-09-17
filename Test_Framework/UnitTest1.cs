@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Diagnostics;
+using Xunit;
 
 namespace Test_Framework
 {
@@ -170,28 +174,27 @@ namespace Test_Framework
         }
 
 
-        
-        [Fact]        
+
+        [Fact]
         public void Test_Method_Twelve_Bit_Analog_to_Degital_Convertion_Float_Round_off()
-         {
-         Twelve_Bit_A_D_Converter Instance_A_D_Converter = new Twelve_Bit_A_D_Converter();
-         List<double> Input = new List<double> { 0,4094,1146,4095};
-         List<int> Expected = new List<int> { 0,10,3,-1 };
-         List<int>Actual = new List<int> ();
-         Actual = Instance_A_D_Converter.Twelve_Bit_Analog_to_Degital_Convertion_Float_Round_off(Instance_A_D_Converter.Twelve_Bit_Analog_to_Degital_Convertion_Float, Input);
-         Assert.Equal(Actual.ToList(),Expected.ToList());  
+        {
+            Twelve_Bit_A_D_Converter Instance_A_D_Converter = new Twelve_Bit_A_D_Converter();
+            List<double> Input = new List<double> { 0, 4094, 1146, 4095 };
+            List<int> Expected = new List<int> { 0, 10, 3, -1 };
+            List<int> Actual = new List<int>();
+            Actual = Instance_A_D_Converter.Twelve_Bit_Analog_to_Degital_Convertion_Float_Round_off(Instance_A_D_Converter.Twelve_Bit_Analog_to_Degital_Convertion_Float, Input);
+            Assert.Equal(Actual.ToList(), Expected.ToList());
         }
 
         [Fact]
         public void Test_Method_Ten_Bit_Analog_to_Degital_Convertion_Float_Round_off()
         {
             Ten_Bit_A_D_Converter Instance_A_D_Converter = new Ten_Bit_A_D_Converter();
-            List<double> Input = new List<double> { 0, 1000, 250, 1023, -100,1022 }; //Here 1023 and -100 are invalid parameter
-            List<int> Expected = new List<int> { -15, 14, -8, -999,-999,15 }; //-999 represents invalid scaling parameter
+            List<double> Input = new List<double> { 0, 1000, 250, 1023, -100, 1022 }; //Here 1023 and -100 are invalid parameter
+            List<int> Expected = new List<int> { -15, 14, -8, -999, -999, 15 }; //-999 represents invalid scaling parameter
             List<int> Actual = new List<int>();
             Actual = Instance_A_D_Converter.Ten_Bit_Analog_to_Degital_Convertion_Float_Round_off(Instance_A_D_Converter.Ten_Bit_Analog_to_Degital_Convertion_Float, Input);
             Assert.Equal(Actual.ToList(), Expected.ToList());
         }
-
     }
 }
