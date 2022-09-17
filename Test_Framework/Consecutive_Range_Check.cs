@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Test_Framework
 {
-    class Consecutive_Range_Check
+    internal class Consecutive_Range_Check
     {
+
         List<int> Samples_Buffer_3 = new List<int>();
         public static List<int> Add_First_Element_From_Final_Sequence(List<int> Samples_Buffer_1, List<int> Samples_Buffer_3, int K)
         {
@@ -57,7 +58,7 @@ namespace Test_Framework
             }
             return Samples_Buffer_3.ToList();
         }
-        public  List<int> Delete_NonCosecutive_Numbers(int[] iCurrentSamples)
+        public List<int> Delete_NonCosecutive_Numbers(int[] iCurrentSamples)
         {
             int Array_Elements = 0;
             List<int> Samples_Buffer_1 = new List<int>();
@@ -209,7 +210,7 @@ namespace Test_Framework
             }
 
         }
-       public  Dictionary<string, int[]> Saparate_Cosecutive_Numbers_With_Ranges(int[] iCurrentSamples)
+        public Dictionary<string, int[]> Saparate_Cosecutive_Numbers_With_Ranges(int[] iCurrentSamples)
         {
             int Array_Elements = 0;
             List<int> Samples_Buffer_1 = new List<int>();
@@ -242,7 +243,7 @@ namespace Test_Framework
         {
             return Console.ReadLine();
         }
-/*
+
         void Is_Input_Data_Valid_Array(List<int> UserList, string inputString, ref string[] inputString_Array, ref int i)
         {
             int result;
@@ -277,13 +278,13 @@ namespace Test_Framework
             return UserList;
         }
 
-*/
 
-        public Dictionary<string, int[]>  Main_Range_Dictionary(List<int> CurrentSamples_Unsorted)
+
+        public Dictionary<string, int[]> Main_Range_Dictionary(List<int> CurrentSamples_Unsorted)
         {
             Consecutive_Range_Check InstanceConsecutive_Range_Check = new Consecutive_Range_Check();
-           // List<int> CurrentSamples_Unsorted = new List<int>();   //2,1, 2, 15, 4, 5, 6, 10, 2, 20, 21, 22, 23, 24, 25, 21,21,22,22};
-          // CurrentSamples_Unsorted = InstanceConsecutive_Range_Check.Evaluate_Convert_To_Int_Input_Data();
+            // List<int> CurrentSamples_Unsorted = new List<int>();   //2,1, 2, 15, 4, 5, 6, 10, 2, 20, 21, 22, 23, 24, 25, 21,21,22,22};
+            // CurrentSamples_Unsorted = InstanceConsecutive_Range_Check.Evaluate_Convert_To_Int_Input_Data();
             List<int> CurrentSamples_Without_Non_Consecutive_No = new List<int>();
             CurrentSamples_Unsorted.Sort();
             Dictionary<string, int[]> Dictionary_of_CurrentSamples = new Dictionary<string, int[]>();

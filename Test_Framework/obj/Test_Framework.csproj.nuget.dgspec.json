@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\act8kor\\source\\repos\\Test_Framework\\Test_Framework\\Test_Framework.csproj": {}
+    "C:\\Users\\act8kor\\Desktop\\Tcq\\Test_Framework\\Test_Framework\\Test_Framework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\act8kor\\source\\repos\\Test_Framework\\Test_Framework\\Test_Framework.csproj": {
+    "C:\\Users\\act8kor\\Desktop\\Tcq\\Test_Framework\\Test_Framework\\Test_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\act8kor\\source\\repos\\Test_Framework\\Test_Framework\\Test_Framework.csproj",
+        "projectUniqueName": "C:\\Users\\act8kor\\Desktop\\Tcq\\Test_Framework\\Test_Framework\\Test_Framework.csproj",
         "projectName": "Test_Framework",
-        "projectPath": "C:\\Users\\act8kor\\source\\repos\\Test_Framework\\Test_Framework\\Test_Framework.csproj",
+        "projectPath": "C:\\Users\\act8kor\\Desktop\\Tcq\\Test_Framework\\Test_Framework\\Test_Framework.csproj",
         "packagesPath": "C:\\Users\\act8kor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\act8kor\\source\\repos\\Test_Framework\\Test_Framework\\obj\\",
+        "outputPath": "C:\\Users\\act8kor\\Desktop\\Tcq\\Test_Framework\\Test_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\act8kor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,18 +37,18 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.9.4, )"
+              "version": "[17.1.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[3.1.2, )"
             },
             "xunit": {
               "target": "Package",
@@ -67,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -76,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
